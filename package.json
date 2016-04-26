@@ -1,0 +1,24 @@
+{
+  "name": "fis-parser-es6-2-es5",
+  "version": "1.0.0",
+  "description": "es6转为es5",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "5.8.38"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiajianrong/fis-parser-es6-2-es5.git"
+  },
+  "keywords": [
+    "fis",
+    "babel",
+    "es6"
+  ],
+  "author": "jiajianrong@58.com",
+  "license": "ISC",
+  "homepage": "https://github.com/nimojs/fis-parser-babel-react#readme"
+}
