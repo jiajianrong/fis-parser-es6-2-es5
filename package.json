@@ -1,6 +1,6 @@
 {
   "name": "fis-parser-es6-2-es5",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "es6转为es5",
   "main": "index.js",
   "dependencies": {

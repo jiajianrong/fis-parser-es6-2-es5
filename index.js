@@ -5,5 +5,15 @@ module.exports = function (content, file, opts) {
   if (!file.isES6) return content;
   opts.moduleId = file.getId();
   var result = babel.transform(content, opts);
-  return result.code;
+  
+  
+  var newcontent = result.code;
+  var fileid = file.getId();
+  fileid = fileid.replace( /\.js$/, '' );
+  
+  if (!/^\s*define\s*\(/.test(newcontent)) {
+	newcontent = 'define(\'' + fileid + '\', function(require, exports, module){ ' + newcontent +' \r\n});';
+  }
+  
+  return newcontent;
 };
